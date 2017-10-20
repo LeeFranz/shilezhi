@@ -1,0 +1,10 @@
+include ':app'
+
+include ':android_packages_apps_InCallUI'
+//指定该Project的路径，根据实际情况进行修改
+def path1 = 'X:\\android_packages_apps_InCallUI'
+project(':android_packages_apps_InCallUI').projectDir = new File(path1)
+
+//引入Project里的Module
+//include ':TestLibrary:library1'
+//include ':TestLibrary:library2'
